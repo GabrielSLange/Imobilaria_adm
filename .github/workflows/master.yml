@@ -41,7 +41,7 @@ jobs:
         run: dotnet build -c Release --no-restore
 
       - name: 📦 Publicar para GitHub Pages
-        run: dotnet publish Imobilaria_adm.csproj -c Release -o docs --nologo
+        run: dotnet publish Imobilaria_adm.csproj -c:Release -o docs --nologo
 
       - name: 📄 Criar Arquivo `.nojekyll`
         run: touch docs/.nojekyll  # Evita que o GitHub Pages ignore pastas com "_"
