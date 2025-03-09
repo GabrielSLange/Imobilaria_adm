@@ -3,7 +3,7 @@ name: Deploy Blazor WebAssembly
 on:
   push:
     branches:
-      - master  # Nome correto do branch para deploy
+      - master  # Nome do branch correto para deploy
   workflow_dispatch:
 
 permissions:
@@ -50,8 +50,9 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: 📤 Fazer Upload para GitHub Pages
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-artifact@v4  # ✅ Atualizado para v4
         with:
+          name: github-pages
           path: docs  # Publicando o conteúdo da pasta 'docs'
 
       - name: 🚀 Deploy para GitHub Pages
