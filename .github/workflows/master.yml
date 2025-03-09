@@ -3,7 +3,7 @@ name: Deploy Blazor WebAssembly
 on:
   push:
     branches:
-      - master  # ✅ Nome correto do branch
+      - master  # ✅ Certifique-se de que o branch correto está sendo usado
   workflow_dispatch:
 
 permissions:
@@ -41,7 +41,13 @@ jobs:
         run: dotnet build -c Release --no-restore
 
       - name: 📦 Publicar para GitHub Pages
-        run: dotnet publish Imobilaria_adm.csproj -c:Release -o docs --nologo
+        run: dotnet publish Imobilaria_adm.csproj -c Release -o docs --nologo
+
+      - name: 🛠️ Remover possíveis `symlinks` antes do deploy
+        run: find docs -type l -delete
+
+      - name: 🛠️ Verificar tamanho final dos arquivos antes do upload
+        run: du -sh docs/
 
       - name: 📄 Criar Arquivo `.nojekyll`
         run: touch docs/.nojekyll  # Evita que o GitHub Pages ignore pastas com "_"
@@ -50,11 +56,11 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: 📤 Fazer Upload dos Arquivos do Blazor
-        uses: actions/upload-artifact@v4  # ✅ Usando `upload-artifact@v4`
+        uses: actions/upload-pages-artifact@v2
         with:
           name: github-pages
-          path: docs  # ✅ Publicando corretamente a pasta 'docs'
+          path: docs  # ✅ Garantindo que os arquivos da pasta `docs/` sejam enviados
 
       - name: 🚀 Deploy para GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v2
