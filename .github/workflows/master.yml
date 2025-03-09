@@ -49,11 +49,10 @@ jobs:
       - name: 🛠️ Configurar GitHub Pages
         uses: actions/configure-pages@v3
 
-      - name: 📤 Fazer Upload para GitHub Pages
-        uses: actions/upload-artifact@v4  # ✅ Atualizado para v4
+      - name: 📤 Fazer Upload dos Arquivos do Blazor
+        uses: actions/upload-pages-artifact@v2  # 🚀 Correção do upload de artifacts
         with:
-          name: github-pages
-          path: docs  # Publicando o conteúdo da pasta 'docs'
+          path: docs  # Publicando corretamente a pasta 'docs'
 
       - name: 🚀 Deploy para GitHub Pages
         id: deployment
