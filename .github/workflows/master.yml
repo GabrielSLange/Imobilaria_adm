@@ -56,7 +56,7 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: 📤 Fazer Upload dos Arquivos do Blazor
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v4
         with:
           name: github-pages
           path: docs  # ✅ Garantindo que os arquivos da pasta `docs/` sejam enviados
