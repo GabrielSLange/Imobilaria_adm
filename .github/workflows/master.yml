@@ -3,7 +3,7 @@ name: Deploy Blazor WebAssembly
 on:
   push:
     branches:
-      - master  # Nome do branch correto para deploy
+      - master  # ✅ Nome correto do branch
   workflow_dispatch:
 
 permissions:
@@ -47,12 +47,13 @@ jobs:
         run: touch docs/.nojekyll  # Evita que o GitHub Pages ignore pastas com "_"
 
       - name: 🛠️ Configurar GitHub Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v3
 
       - name: 📤 Fazer Upload dos Arquivos do Blazor
-        uses: actions/upload-pages-artifact@v4  # 🚀 Correção do upload de artifacts
+        uses: actions/upload-artifact@v4  # ✅ Usando `upload-artifact@v4`
         with:
-          path: docs  # Publicando corretamente a pasta 'docs'
+          name: github-pages
+          path: docs  # ✅ Publicando corretamente a pasta 'docs'
 
       - name: 🚀 Deploy para GitHub Pages
         id: deployment
