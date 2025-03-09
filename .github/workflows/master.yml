@@ -43,10 +43,10 @@ jobs:
       - name: 📦 Publicar para GitHub Pages
         run: dotnet publish Imobilaria_adm.csproj -c Release -o docs --nologo
 
-      - name: 🛠️ Remover possíveis `symlinks` antes do deploy
+      - name: 🛠️ Remover `symlinks` antes do upload
         run: find docs -type l -delete
 
-      - name: 🛠️ Verificar tamanho final dos arquivos antes do upload
+      - name: 🛠️ Verificar tamanho da pasta antes do upload
         run: du -sh docs/
 
       - name: 📄 Criar Arquivo `.nojekyll`
@@ -55,11 +55,11 @@ jobs:
       - name: 🛠️ Configurar GitHub Pages
         uses: actions/configure-pages@v3
 
-      - name: 📤 Fazer Upload dos Arquivos do Blazor
-        uses: actions/upload-pages-artifact@v4
+      - name: 📤 Fazer Upload dos Arquivos do Blazor (Correção `upload-artifact@v4`)
+        uses: actions/upload-artifact@v4  # ✅ Atualizado para v4 (sem v3 descontinuado)
         with:
           name: github-pages
-          path: docs  # ✅ Garantindo que os arquivos da pasta `docs/` sejam enviados
+          path: docs  # ✅ Publicando corretamente a pasta 'docs'
 
       - name: 🚀 Deploy para GitHub Pages
         id: deployment
