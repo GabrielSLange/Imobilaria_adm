@@ -1,5 +1,5 @@
 {
-  "mainAssemblyName": "Imobilaria_adm",
+  "mainAssemblyName": "Imobiliaria_adm",
   "resources": {
     "hash": "sha256-U8jU+C4hHq4uIuDIoWXMb06kXcVWho8e5LZ6/zFbxUU=",
     "jsModuleNative": {
@@ -18,7 +18,7 @@
     },
     "coreAssembly": {},
     "assembly": {
-      "Imobilaria_adm.wasm": "sha256-AspYkeZrf2zUp/PHjsNDDeBafA1N0dzWBbnHHQ4VaW8=",
+      "Imobiliaria_adm.wasm": "sha256-AspYkeZrf2zUp/PHjsNDDeBafA1N0dzWBbnHHQ4VaW8=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-Ma9hsRp4uZjVCKtZAXRKZ1aSp/AxKehtK8ncMWbch+k=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-5L5OoM3VKlb7NCK0TrIc7E1/Wz75IGaDDydbhOahEmo=",
       "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-g89ZyzgJ823TqwG2mRV0v7+PyPBeygG8NBZzu44GlU4=",

@@ -3,8 +3,8 @@
   "ManifestType": "Publish",
   "Endpoints": [
     {
-      "Route": "Imobilaria_adm.gnw4rn8k5y.styles.css",
-      "AssetFile": "Imobilaria_adm.styles.css",
+      "Route": "Imobiliaria_adm.gnw4rn8k5y.styles.css",
+      "AssetFile": "Imobiliaria_adm.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -43,13 +43,13 @@
         },
         {
           "Name": "label",
-          "Value": "Imobilaria_adm.styles.css"
+          "Value": "Imobiliaria_adm.styles.css"
         }
       ]
     },
     {
-      "Route": "Imobilaria_adm.styles.css",
-      "AssetFile": "Imobilaria_adm.styles.css",
+      "Route": "Imobiliaria_adm.styles.css",
+      "AssetFile": "Imobiliaria_adm.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -85,8 +85,8 @@
       ]
     },
     {
-      "Route": "_framework/Imobilaria_adm.wasm",
-      "AssetFile": "_framework/Imobilaria_adm.wasm.br",
+      "Route": "_framework/Imobiliaria_adm.wasm",
+      "AssetFile": "_framework/Imobiliaria_adm.wasm.br",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -140,8 +140,8 @@
       ]
     },
     {
-      "Route": "_framework/Imobilaria_adm.wasm",
-      "AssetFile": "_framework/Imobilaria_adm.wasm.gz",
+      "Route": "_framework/Imobiliaria_adm.wasm",
+      "AssetFile": "_framework/Imobiliaria_adm.wasm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -195,8 +195,8 @@
       ]
     },
     {
-      "Route": "_framework/Imobilaria_adm.wasm",
-      "AssetFile": "_framework/Imobilaria_adm.wasm",
+      "Route": "_framework/Imobiliaria_adm.wasm",
+      "AssetFile": "_framework/Imobiliaria_adm.wasm",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -232,8 +232,8 @@
       ]
     },
     {
-      "Route": "_framework/Imobilaria_adm.wasm.br",
-      "AssetFile": "_framework/Imobilaria_adm.wasm.br",
+      "Route": "_framework/Imobiliaria_adm.wasm.br",
+      "AssetFile": "_framework/Imobiliaria_adm.wasm.br",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -277,8 +277,8 @@
       ]
     },
     {
-      "Route": "_framework/Imobilaria_adm.wasm.gz",
-      "AssetFile": "_framework/Imobilaria_adm.wasm.gz",
+      "Route": "_framework/Imobiliaria_adm.wasm.gz",
+      "AssetFile": "_framework/Imobiliaria_adm.wasm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
